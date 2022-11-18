@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+        <!--video en arrière plan-->
+    
+    <div>    
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="imgs/bgvids/80s1.mp4">
+        </video>
+    </div>    
+        <!--filtre effet crt-->
+    <div class="noise"></div>
+    <div class="noise2nd"></div>
+    
+
+        <!--menu choix couleurs etc...-->
+    
+<button id=revealmenu class="uk-button-default uk-small-right" type="button" uk-toggle="target: #offcanvas-reveal"><img src='assets/buttons/menuanimated.gif'></button>
+    
+<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+
+        <p id="menutitle">Commands</p>
+
+    <div id='menu'>
+    <div id="firstlist">    
+    <ul>
+        <li><div id='b1' class='ch'></div></li>
+        <li><div id='b2' class='ch'></div></li>
+        <li><div id='b3' class='ch'></div></li>
+        <li><div id='b4' class='ch'><img id='b4in' src="assets/filters/noise2.gif"></div></li>
+        <li><div id='b5' class='ch'></div></li>
+    </ul>
+    </div>
+    <div id='secondlist'>    
+    <ul>
+        <li><div id='b6' class='ch'></div></li>
+        <li><div id='b7' class='ch'></div></li>
+        <li><div id='b8' class='ch'></div></li>
+        <li><div id='b9' class='ch'></div></li>
+        <li><div id='b10' class='ch'></div></li>
+    </ul>
+        
+    </div>
+
+    </div>
+<div id="buttoncontainer">
+    <button id="lower" class="volume"><img src="assets/buttons/down.png"></button>
+            <button id="reset">
+                <svg id="undosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M48.5 224H40c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H48.5z"/>
+                </svg>
+            </button>
+            <button id="up" class="volume"><img src="assets/buttons/up.png"></button>
+        </div>    
+    </div>
+</div>
+    
+        <!--Le widget Soundcloud-->
+
+<div hidden>
+<iframe id="soundcloud_widget" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1019942032%3Fsecret_token%3Ds-EhrP6AlSZ1k&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sumpheus" title="Sumpheus" target="_blank" style="color: #cccccc; text-decoration: none;">Sumpheus</a> · <a href="https://soundcloud.com/sumpheus/sets/velocity-machinegun/s-EhrP6AlSZ1k" title="Velocity MachineGun" target="_blank" style="color: #cccccc; text-decoration: none;">Velocity MachineGun</a></div>
+</div>
+    
+
+
+            <!--apparence de l'app-->
+    
+<div>    
+<div id='container3'>    
+    <div id='play'>
+        <p class='touch'>Play</p>
+    </div>
+    <div id='stop'>
+        <p class='touch'>Stop</p>
+    </div>  
+</div>
+      
+    
+<div id='container'>
+    <p class='touch' id='previous'>Prev</p>
+    <div id='disque'></div>
+    <p class='touch' id='next'>Next</p>
+</div>
+</div>    
+        <!--les script-->
+    
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="http://w.soundcloud.com/player/api.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>
