@@ -431,3 +431,20 @@ body{
     pointer-events: none;
     background: url('assets/filters/vhs.webp');
 }
+
+/* media queries for landscape orientation on phones */
+@media (max-height: 690px) {
+    #disque{
+        height: 260px;
+        width: 260px;
+    }
+}
+@media (max-height: 590px) {
+    #disque{
+        height: 200px;
+        width: 200px;
+    }
+    .touch{
+        font-size: 35px;
+    }
+}
