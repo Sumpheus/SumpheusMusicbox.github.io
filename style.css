@@ -433,6 +433,18 @@ body{
 }
 
 /* media queries for landscape orientation on phones */
+@media (orientation: portrait) {
+    .ch{
+        width: 80px;
+        height: 80px;
+    }
+    #menutitle{
+        font-size: 45px;
+    }
+    #revealmenu img{
+        height: 100px;
+    }
+}
 @media (max-height: 590px) {
     #disque{
         height: 260px;
